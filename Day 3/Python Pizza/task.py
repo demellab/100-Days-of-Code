@@ -20,6 +20,7 @@ elif size == "M":
         total_bill += 3
     print(f"Total bill for your pizza is: {total_bill}")
 else:
+
     total_bill = 25
     print("Price of a Large Pizza is: $25")
     if pepperoni == "Y":
