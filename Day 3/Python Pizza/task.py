@@ -6,23 +6,23 @@ total_bill = 0
 
 if size == "S":
     total_bill = 15
-    print("Price of a Small Pizza is: $15")
-
-    if pepperoni == "Y":
-        total_bill += 2
-    print(f"Total bill for your pizza is: {total_bill}")
 
 elif size == "M":
     total_bill = 20
-    print("Price of a Medium Pizza is: $20")
 
-    if pepperoni == "Y":
-        total_bill += 3
-    print(f"Total bill for your pizza is: {total_bill}")
-else:
-
+elif size == "L":
     total_bill = 25
-    print("Price of a Large Pizza is: $25")
-    if pepperoni == "Y":
+
+else:
+    print("You typed the wrong inputs, please select a size S/M/L ")
+
+if pepperoni == "Y":
+    if size == "S":
+        total_bill += 2
+    else:
         total_bill += 3
-    print(f"Total bill for your pizza is {total_bill}")
+
+if extra_cheese == "Y":
+    total_bill += 1
+
+print(f"Your final bill is: ${total_bill}.")
