@@ -17,3 +17,5 @@ print(random_no_10)
 
 #random float
 ran_uniform = random.uniform(1,10) #a <= number <=b
+
+
